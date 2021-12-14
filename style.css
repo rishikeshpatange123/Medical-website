@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    
+}
+html{
+    scroll-behavior: smooth;    
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb{
+    display: none;
+}
+/* nav */
+html{
+    scroll-behavior: smooth;
+}
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+.wrapper{     
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 0%;
+    width: 100%;
+    height: 72px;
+    z-index: 5; 
+    background: rgb(50, 188, 91);
+}
+.logo{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 59px;
+    cursor: pointer;
+    margin-left: -30px;
+    color: white;
+}
+nav{
+    margin-left: 120px;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    margin-right: 1rem;
+    margin-top: -40px;
+    height: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.644);
+    font-size: 1.3rem;
+    font-family: Roboto;
+    margin-right: 20px;
+    font-style: normal;
+    line-height: 80px;
+    transition: 0.1s;
+}
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+form{
+    margin-left: 400px;
+}
+form input{
+    background-color: rgba(255, 255, 255, 0.459);
+    border: transparent;
+    height: 30px;
+    width: 160px;
+    border-radius: 1px;
+}
+form button{
+    background: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+/*  */
+.firstpage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    display: flex;
+    background: url("Rectangle\ 1.png") no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    position: absolute;
+}
+.home-content{
+    margin-left: -800px;
+}
+.home-content img{
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+    position: absolute;
+}
+.firstpage h1 {
+    font-family: roboto;
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 80px;
+    
+}
+.firstpage p{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: roboto;
+    color: white;
+    width: 600px;
+    
+}
+.firstpage .btn{
+    margin-top: 40px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+box-sizing: border-box;
+height: 40px;
+width: 100px;
+}
+.firstpage .btn:hover{
+    border: 2px solid #86f10c;
+    color: #ffffff;
+}
+/* 2nd */
+.sec-page{
+    display: flex;
+    height: 110vh;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.content2 {
+    margin-top: 30px;
+}
+.content2 h1{
+    font-size: 50px;
+    font-weight:bold;
+    
+}
+.content2 p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+.content2 button{    margin-left: 1300px;
+    background:rgb(50 188 92 / 91%);
+border-radius: 9px;
+border-color: white;
+color: white;
+font-size: 21px;
+height: 45px;
+width: 120px;
+transition: 0.5s;
+}
+.content2 button:hover{
+    transform: scale(1.1);
+}
+/* items */
+.item-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 400px));
+    gap:px;
+    margin-top: 30px;
+    margin-left: 100px;
+    
+}
+.items img{
+    margin-top: 5px;
+    transition: 1s;
+    height: 280px;
+    width: 300px;
+    cursor: pointer;
+    /* padding-left: 40px; */
+    /* padding-right: 40px; */
+}
+.items img:hover{
+    transform:translateY(-5px);
+}
+/* 3rd page */
+.third-page{
+    display: flex;
+    height: 120vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    margin-top: -500px;
+    height: 200px;
+    width:  90%;
+    background-color: rgb(165 239 165 / 71%);
+    border-radius: 10px;
+}
+.box img{
+    height: 200px;
+    width: 800px;
+    margin-left: 41%;
+    margin-top: -165px;
+}
+.box h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 40px;
+    line-height: 50px;
+}
+.box p{
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: bolder;
+    color: rgb(38, 179, 38);
+    cursor: pointer;
+}
+.content3{
+    display: flex;
+}
+.content3 h3{
+    width: 100px;
+    font-size: 20px;
+
+}
+.box h3{
+    width: 500px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+.category{
+    display: flex;
+}
+.category h1:nth-child(1){
+    font-weight: bold;
+    font-size: 45px;
+
+}
+.category h1:nth-child(2){
+    margin-left: 600px;
+    font-weight: bold;
+    font-size: 43px;
+    width: 320px;
+}
+.category h3:nth-child(2){
+    margin-left:200px;
+    width: 650px;
+}
+.category button{
+    margin-left: 180px;
+    margin-top: 45px;
+    background:rgb(50 188 92 / 91%);
+    border-radius: 9px;
+    border-color: white;
+    color: white;
+    font-size: 21px;
+    height: 45px;
+    width: 120px;
+    transition: 0.5s;
+}
+.category button:hover{
+    transform: scale(1.1);
+}
+/* 4th page */
+.fourth-page{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.left-items{
+    margin-top: -300px;
+    margin-left: -110px;
+    background-color: rgb(165 239 165 / 71%);
+    border-radius: 10px;
+    height: 600px;
+    width: 350px;
+}
+.left-items li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+    padding: 20px;
+}
+.left-items li img:nth-child(1){
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+}
+.left-items li img:nth-child(2){
+    height: 30px;
+    width: 30px;
+    margin-left: 30px;
+}
+/* item container 1 */
+.item-container1{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 300px));
+    gap:5px;
+    margin-top: -300px;
+    margin-left: 300px;
+    height: 500px;
+    
+}
+.items1 img{
+    transition: 1s;
+    height: 280px;
+    width: 300px;
+    cursor: pointer;
+}
+.items1 img:hover{
+    transform: translateY(-5px);
+}
+.kareena{
+    margin-top: 15px;
+    height: 230px;
+    width: 350px;
+}
+/* fifth-page */
+.fifth-page{
+    display: flex;
+    height: 100vh;
+    width:100%;
+    justify-content: center;
+}
+.fifth-container{
+    margin-top: -50px;
+    margin-left:10px;
+}
